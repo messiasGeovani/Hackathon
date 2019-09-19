@@ -1,0 +1,143 @@
+/* This is a CSS file */
+
+*{
+  margin: 0;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../img/plataforma.jpg);
+
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#cadastro-session{
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 20vh 60vh 20vh;
+  
+}
+
+/* content */
+
+.content {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background: rgba(196, 196, 196, 0.45);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  padding: 4vh;
+  text-align: center
+}
+
+/* corpo do formulario */
+
+.form-cadastro {
+  margin-top: 10%;
+}
+
+/* campos do formulário */
+
+.form-input {
+  width: 237px;
+  height: 37px;
+  margin-bottom: 10%;
+
+  text-align: center;
+
+  background: rgba(219, 219, 219, 0.7);
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* foto-perfil */
+
+.perfil-container {
+  background-color: white;
+  border-radius: 50%;
+  padding: 4vh;
+  display: inline-block;
+  margin-bottom: 10%;
+
+}
+
+/* imgPerfil */
+
+#imgPerfil {
+  max-width: 100%
+}
+
+/* label de cancelar */
+
+.label-cancelar {
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+
+  color: #F21414;
+
+}
+
+/* botao para efetuar o cadastro */
+
+.btn-cadastrar {
+  width: 166px;
+  height: 37px;
+
+  background: rgba(72, 140, 87, 0.82);
+  border: 1px solid #4AEB6E;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+  color: white;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  font-feature-settings: 'ss01' on, 'salt' on;
+
+  margin-bottom: 5%;
+
+}
+
+/* titulo do formulário */
+
+.titulo-formulario {
+  font-family: montserrat;
+  font-size: 23px;
+  border-bottom: solid 1px white;
+  padding-bottom: 3%
+}
+
+/* subtitulo do formulario */
+
+.subtitulo-formulario {
+  margin-top: 3%;
+  margin-bottom: 10%;
+  font-family: montserrat;
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+/* botao para selecionar imagem de prfil */
+
+#btnFoto {
+  width: 150px;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.perfil-icon {
+  display: block;
+  max-width: 100%
+}

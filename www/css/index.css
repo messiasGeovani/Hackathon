@@ -1,0 +1,114 @@
+/* This is a CSS file */
+
+*{
+  margin: 0;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../img/plataforma-pesca-mongagua.jpg);
+
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* sessoes */
+
+#login-session{
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 20vh 60vh 20vh;
+}
+
+
+
+/* content */
+
+.content {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background: rgba(196, 196, 196, 0.45);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  padding: 4vh;
+  text-align: center;
+  position: center
+}
+
+.form-login {
+  margin-top: 30%;
+}
+
+/* login-input */
+
+.form-input {
+  width: 237px;
+  height: 37px;
+  margin-bottom: 10%;
+
+  text-align: center;
+
+  background: rgba(219, 219, 219, 0.7);
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* botao de login */
+
+.btn-login {
+  width: 109px;
+  height: 37px;
+
+  background: rgba(72, 140, 87, 0.82);
+  border: 1px solid #4AEB6E;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+  font-family: montserrat;
+  font-size: 15px;
+  color: white;
+
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+/* botao de cadastro */
+
+.btn-cadastro {
+  width: 108px;
+  height: 37px;
+
+  background: rgba(181, 44, 44, 0.57);
+  border: 1px solid #E05151;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+  font-family: montserrat;
+  font-size: 15px;
+  color: white;
+
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.form-label {
+  /* esqueci minha senha */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 17px;
+  font-feature-settings: 'ss01' on, 'salt' on;
+
+  color: #FFFFFF;
+
+  margin-bottom: 10%;
+
+}
