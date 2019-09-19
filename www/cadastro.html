@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/cadastro.css">
+
+  <!-- biblioteca jquery -->
+  <script src="components/jquery-3.4.1.min.js"></script>
+  <!-- arquivo de funções do app -->
+  <script src="components/cadastro.js"></script>
+</head>
+<body>
+
+  <!-- sessão de cadastro -->
+  <section id="cadastro-session">
+    <!-- container do formulario -->
+    <div class="content">
+
+      <!-- formulario de login -->
+      <div class="form-cadastro">
+
+        <h3 class="titulo-formulario">Cadastre-se</h3>
+
+        <!-- formulario para preenchimento em texto -->
+        <div id="formularioTexto">
+
+          <h4 class="subtitulo-formulario">Informações de cadastro</h4>
+          <!-- campos de cadastro -->
+          <input type="text" class="form-input" id="email" placeholder="email">
+          <br>
+          <input type="text" class="form-input" id="usuario" placeholder="usuario">
+          <br>
+          <input type="password" class="form-input" id="senha" placeholder="senha" >
+          <br>
+
+          <!-- botões de login e cadastro -->
+          <button class="btn-cadastrar" id="btnCadastrar" onclick="infoPerfil()">Enviar</button>
+          <br>
+
+          <label class="label-cancelar" id="cancelar">Cancelar</label>
+        </div> <!-- #formulario-texto -->
+
+        <!-- formulario para selecionar foto -->
+        <div id="formularioPerfil">
+          <!-- botão para selecionar a imagem de perfil -->
+          <button id="btnFoto">
+            <img src="./img/perfil-icon.png" class="perfil-icon">
+          </button>
+        </div>
+
+      </div> <!-- .form -->
+
+    </div> <!-- .content -->
+  </section>
+
+</body>
+</html>
